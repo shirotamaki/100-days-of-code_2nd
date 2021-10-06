@@ -2084,3 +2084,6 @@ puts arry.join
 And, I wrote it in one line.
 
 puts gets.chomp.chars.map { |i| i == '1' ? '9' : i == '9' ? '1' : i }.join
+
+
+test
