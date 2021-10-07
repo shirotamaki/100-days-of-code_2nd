@@ -2085,5 +2085,29 @@ And, I wrote it in one line.
 
 puts gets.chomp.chars.map { |i| i == '1' ? '9' : i == '9' ? '1' : i }.join
 
+#100DaysOfCode 3rd_rap Day: 055/100
+I tried AtCoder (B - typo)
 
-test
+s = gets.chomp.chars
+t = gets.chomp.chars
+
+if s == t
+puts 'Yes'
+exit
+end
+
+count = s.size
+(count-1).times do |i|
+if s[i] != t[i]
+s[i], s[i+1] = s[i+1], s[i]
+break
+end
+end
+
+if  s == t
+puts 'Yes'
+else
+puts 'No'
+end
+
+
