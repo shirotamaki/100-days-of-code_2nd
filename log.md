@@ -2110,4 +2110,10 @@ else
 puts 'No'
 end
 
+#100DaysOfCode 3rd_rap Day: 056/100
+I tried AtCoder(B - Base K)
 
+K = gets.chomp.to_i
+A, B = gets.split.map(&:to_s)
+puts A.to_i(K) * B.to_i(K)
+https://docs.ruby-lang.org/ja/latest/method/String/i/to_i.html
