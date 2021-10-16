@@ -2117,3 +2117,21 @@ K = gets.chomp.to_i
 A, B = gets.split.map(&:to_s)
 puts A.to_i(K) * B.to_i(K)
 https://docs.ruby-lang.org/ja/latest/method/String/i/to_i.html
+
+#100DaysOfCode 3rd_rap Day: 057/100
+I tried AtCoder(B - Failing Grade)
+N, P = gets.split.map(&:to_i)
+arry = gets.split.map(&:to_i)
+
+sum = 0
+arry.each do |n|
+if n < P
+sum += 1
+else
+# Do nothing
+end
+end
+puts sum  
+
+I wrote it in a different way.One line.
+puts arry.count { _1 < P }
