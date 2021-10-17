@@ -2135,3 +2135,12 @@ puts sum
 
 I wrote it in a different way.One line.
 puts arry.count { _1 < P }
+
+#100DaysOfCode 3rd_rap Day: 058/100
+I tried AtCoder(B - Go to Jail)
+N = gets.chomp.to_i
+ary = Array.new(N){ gets.to_s.split.map{ |e| e.to_i } }
+
+result = ary.map { |(x, y)| x == y }
+puts result.each_cons(3).any?(&:all?) ? 'Yes' : 'No'
+
