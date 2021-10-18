@@ -2144,3 +2144,8 @@ ary = Array.new(N){ gets.to_s.split.map{ |e| e.to_i } }
 result = ary.map { |(x, y)| x == y }
 puts result.each_cons(3).any?(&:all?) ? 'Yes' : 'No'
 
+#100DaysOfCode 3rd_rap Day: 059/100
+I tried AtCoder(Product Max)
+a, b, c, d = gets.split.map(&:to_i)
+puts [a * c, a * d, b * c, b * d].max
+
