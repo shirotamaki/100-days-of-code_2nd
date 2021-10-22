@@ -2149,3 +2149,8 @@ I tried AtCoder(Product Max)
 a, b, c, d = gets.split.map(&:to_i)
 puts [a * c, a * d, b * c, b * d].max
 
+#100DaysOfCode 3rd_rap Day: 060/100
+I tried AtCoder(B - Multiple of 9 )
+
+n = gets.chars.map(&:to_i)
+puts n.sum % 9 == 0 ? 'Yes' : 'No'
