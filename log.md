@@ -2154,3 +2154,12 @@ I tried AtCoder(B - Multiple of 9 )
 
 n = gets.chars.map(&:to_i)
 puts n.sum % 9 == 0 ? 'Yes' : 'No'
+
+#100DaysOfCode 3rd_rap Day: 061/100
+I tried AtCoder(B - Making Triangle)
+n = gets.chomp.to_i
+array = gets.chomp.split(' ').map(&:to_i).sort
+
+puts array.combination(3).count { |a, b, c| a < b && b < c && c < a + b }
+
+https://docs.ruby-lang.org/ja/latest/method/Array/i/combination.html
