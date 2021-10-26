@@ -2163,3 +2163,16 @@ array = gets.chomp.split(' ').map(&:to_i).sort
 puts array.combination(3).count { |a, b, c| a < b && b < c && c < a + b }
 
 https://docs.ruby-lang.org/ja/latest/method/Array/i/combination.html
+
+#100DaysOfCode 3rd_rap Day: 062/100
+I tried AtCoder(B - Distance)
+
+N, D = gets.split.map(&:to_i)
+
+coordinate = D*D
+result = 0
+N.times {
+x, y = gets.split.map(&:to_i)
+result += 1 if x*x + y*y <= coordinate
+}
+puts result
