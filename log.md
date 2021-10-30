@@ -2176,3 +2176,14 @@ x, y = gets.split.map(&:to_i)
 result += 1 if x*x + y*y <= coordinate
 }
 puts result
+
+#100DaysOfCode 3rd_rap Day: 063/100
+I tried AtCoder(A - Tires)
+I wrote JavaScript.
+
+function main(input) {
+input = input.split('\n');
+console.log(input[0].endsWith("er") ? "er" : "ist");
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
