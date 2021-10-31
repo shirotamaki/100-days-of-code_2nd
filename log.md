@@ -2187,3 +2187,14 @@ console.log(input[0].endsWith("er") ? "er" : "ist");
 }
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
+#100DaysOfCode 3rd_rap Day: 064/100
+I tried AtCoder(A - Exact Price)
+
+function main(input) {
+if ( input >= 100 && input % 100 === 0 ) {
+console.log("Yes");
+} else {
+console.log("No");
+}
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
