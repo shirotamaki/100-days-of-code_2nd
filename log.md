@@ -2198,3 +2198,16 @@ console.log("No");
 }
 }
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 065/100
+I tried AtCoder(A - Four Digits)
+
+function main(input) {
+let array = input.split('\n');
+let s = array[0]
+let format = 4;
+let result = String(s).padStart(format, '0')
+console.log(result);
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
