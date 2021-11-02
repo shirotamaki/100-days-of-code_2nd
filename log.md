@@ -2211,3 +2211,14 @@ console.log(result);
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 066/100
+I tried AtCoder(A - Seismic magnitude scales)
+
+const main = (input) => {
+const array = input.split(' ')
+const magnitude = parseInt(array[0]) - parseInt(array[1])
+console.log(32 ** magnitude)
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
