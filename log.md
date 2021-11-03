@@ -2222,3 +2222,21 @@ console.log(32 ** magnitude)
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 067/100
+I tried AtCoder(A - AtCoder Quiz 2)
+
+const main = (input) => {
+const x = parseInt(input)
+if (x < 40) {
+console.log(40 - x)
+} else if (x < 70) {
+console.log(70 - x)
+} else if (x < 90) {
+console.log(90 - x)
+} else if (x >= 90) {
+console.log("expert")
+}
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
