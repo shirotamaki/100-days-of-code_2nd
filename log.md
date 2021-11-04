@@ -2240,3 +2240,17 @@ console.log("expert")
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 068/100
+function main(inputs) {
+const lines = inputs.split('\n')
+const ary = lines[1].split('')
+const day = parseInt(lines[0] -1)
+if (ary[day] == 'o') {
+console.log('Yes')
+} else if ( ary[day] == 'x') {
+console.log('No')
+}
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
