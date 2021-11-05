@@ -2254,3 +2254,27 @@ console.log('No')
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 069/100
+I tried AtCoder(A - Your First Judge)
+
+function main(input) {
+let S = input.split('\n')[0];
+if (S === 'Hello,World!') {
+console.log('AC')
+} else {
+console.log('WA')
+}
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+This is Conditional (ternary) operator.
+
+function main(input) {
+const S = input.split('\n')[0];
+const reslut = (S === 'Hello,World!' ?　'AC' : 'WA') 
+console.log(result)
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
