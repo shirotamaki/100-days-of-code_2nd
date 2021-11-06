@@ -2278,3 +2278,22 @@ console.log(result)
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+#100DaysOfCode 3rd_rap Day: 070/100
+I tried AtCoder(A - New Generation ABC)
+
+function main(input) {
+const N = input.split('\n')[0]
+const numberOfTimes = parseInt(N)
+if (numberOfTimes <= 125) {
+console.log('4')
+} else if (numberOfTimes <= 211) {
+console.log('6')
+} else if (numberOfTimes <= 214) {
+console.log('8')
+}
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+I did learn the if_statement.
