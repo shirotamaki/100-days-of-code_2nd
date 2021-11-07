@@ -2297,3 +2297,22 @@ console.log('8')
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
 I did learn the if_statement.
+![image.png](https://bootcamp.fjord.jp/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFJ2QWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0f434ca169c8b213eb6c5a760fdb2c223b4adedf/image.png)
+
+
+#100DaysOfCode 3rd_rap Day: 071/100
+I tried AtCoder(A - Libra)
+
+function main(input) {
+const arry = input.split(' ')
+const left = parseInt(arry[0]) + parseInt(arry[1])
+const right = parseInt(arry[2]) + parseInt(arry[3])
+if (left == right) {
+console.log('Balanced')
+} else if (left > right) {
+console.log('Left')
+} else {
+console.log('Right')
+}
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
