@@ -2316,3 +2316,21 @@ console.log('Right')
 }
 }
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 072/100
+I tried AtCoder(B - Palindrome with leading zeros)
+
+function main(input) {
+const s = input.trim();
+const regex = /0+$/;
+const result = s.replace(regex, '');
+const resultReverse = result.split('').reverse().join('');
+if (result === resultReverse) {
+console.log('Yes')
+} else {
+console.log('No')
+}
+};
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
