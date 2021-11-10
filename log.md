@@ -2344,3 +2344,14 @@ const arryChange = arry[1] + arry[2] + arry[0]
 console.log(arryChange)
 }
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 074/100
+I tried AtCoder(B - Round Down)
+
+function main(input) {
+const s = input.trim()
+const num = s.split(".")
+console.log(num[0])
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
