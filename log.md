@@ -2355,3 +2355,16 @@ console.log(num[0])
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
+#100DaysOfCode 3rd_rap Day: 075/100
+I tried AtCoder(B - Many Oranges)
+
+function main(input) {
+const [A, B, W] = input.trim().split(" ").map(Number)
+const min = Math.ceil((W * 1000) / B)  //切り上げ
+const max = Math.floor((W * 1000) / A) //切り捨て
+const ans = max >= min ? `${min} ${max}` : "UNSATISFIABLE"
+console.log(ans);
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"))
