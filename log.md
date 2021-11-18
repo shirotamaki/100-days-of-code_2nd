@@ -2394,5 +2394,24 @@ console.log(ans);
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
+#100DaysOfCode 3rd_rap Day: 077/100
+I tried AtCoder(B - Play Snuke)
+function main(line) {
+lines = line.split("\n");
+const N = Number(lines[0]);
+let value = 1000000000;
+for (let i = 1; i <= N ; i++) {
+let [a, p, x] = lines[i].split(" ").map(Number);
+if(x > a){
+value = Math.min(value,p);      
+}
+}
+if(value === 1000000000){
+console.log(-1);  
+}else{
+console.log(value);
+}
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
  
