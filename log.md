@@ -2414,4 +2414,40 @@ console.log(value);
 }
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
+#100DaysOfCode 3rd_rap Day: 078/100
+I solved the problems in the Udemy JavaScript course.
+
+function calcFactory (val) {
+return {
+plus: function (target) {
+const newVal = val + target
+console.log(`${val} + ${target} = ${newVal}`)
+val = newVal
+},
+minus: function (target) {
+const newVal = val - target
+console.log(`${val} - ${target} = ${newVal}`);
+val = newVal
+},
+multiply: function (target) {
+const newVal = val * target
+console.log(`${val} * ${target} = ${newVal}`);
+val = newVal
+},
+divide: function (target) {
+const newVal = val / target
+console.log(`${val} / ${target} = ${newVal}`);
+val = newVal
+},
+}
+}
+
+const calc = calcFactory(10)
+calc.plus(5)
+calc.minus(3)
+calc.multiply(3)
+calc.divide(2)
+
  
+
+
