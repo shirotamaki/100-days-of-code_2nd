@@ -2448,6 +2448,18 @@ calc.minus(3)
 calc.multiply(3)
 calc.divide(2)
 
- 
+#100DaysOfCode 3rd_rap Day: 079/100
+It's been a while since I've tweeted about 100DaysOfCode today!
+I'd like to tweet using an application released by one of my friend.
+Super convenient ! Thank you @yana_gis !!
 
+A - Rotate
+const main = (stdin) => {
+const s = stdin.trim();
+const arry = Array.from(s)
+const arryChange = arry[1] + arry[2] + arry[0]
+console.log(arryChange)
+}
+main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
+Users of the 100DayOfCode, Try it !
