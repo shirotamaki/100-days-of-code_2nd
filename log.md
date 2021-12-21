@@ -2463,3 +2463,26 @@ console.log(arryChange)
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
 
 Users of the 100DayOfCode, Try it !
+
+
+#100DaysOfCode 3rd_rap Day: 080/100
+B - Election
+function main(input) {
+const args = input.split('\n')
+const N = args[0]
+const names = args.slice(1, args.length - 1)
+
+counts = {}
+let max = 0
+let ans
+for (let i=0; i<names.length; i++) {
+    let key = names[i]
+    counts[key] = counts[key] ? counts[key] + 1 : 1
+    if(counts[key] > max){
+    	max = counts[key]
+      	ans = key
+    }
+}
+	console.log(ans)
+}
+main(require('fs').readFileSync('/dev/stdin', 'utf8'))
