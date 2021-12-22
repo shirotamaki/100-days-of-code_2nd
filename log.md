@@ -1,3 +1,4 @@
+
 # 100 Days Of Code - Log
 #100DaysOfCode 2nd_rap Day: 001/100  
 I am going to try for 2nd rap from today!  
@@ -2486,3 +2487,15 @@ for (let i=0; i<names.length; i++) {
 	console.log(ans)
 }
 main(require('fs').readFileSync('/dev/stdin', 'utf8'))
+
+#100DaysOfCode 3rd_rap Day: 081/100
+I was striking an external API
+const fetch = require('node-fetch')
+const API = "https://connpass.com/api/v1/event/"
+async function callApi() {
+const res = await fetch(API)
+const json = await res.json()
+console.log(json)
+}
+
+callApi()
