@@ -2499,3 +2499,22 @@ console.log(json)
 }
 
 callApi()
+
+#100DaysOfCode 3rd_rap Day: 082/100
+
+function main(input) {
+	const inputList = input.trim().split(",")
+	const x = inputList[0]
+	const y = inputList[1]
+
+	const difference = y - x
+
+	if (difference <= 0) {
+console.log(0)
+} else {
+console.log(Math.ceil(difference/10)) //引数として与えた数以上の最小の整数を返す
+  }
+}
+
+main(require("fs").readFileSync("/dev/stdin", "utf8"))
+
